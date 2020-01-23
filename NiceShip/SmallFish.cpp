@@ -17,7 +17,11 @@ void SmallFish::Start()
 //	ï`âÊ
 void SmallFish::Render()
 {
-	if (_position.x < 500)
+	LoadGraphScreen(static_cast<int>(_position.x),
+		static_cast<int>(_position.y),
+		"img\\fishC.png", TRUE);
+
+	/*if (_position.x < 500)
 	{
 		LoadGraphScreen(static_cast<int>(_position.x),
 			static_cast<int>(_position.y),
@@ -28,7 +32,7 @@ void SmallFish::Render()
 		LoadGraphScreen(static_cast<int>(_position.x),
 			static_cast<int>(_position.y),
 			"img\\fishC.png", TRUE);
-	}
+	}*/
 }
 
 //	çXêV

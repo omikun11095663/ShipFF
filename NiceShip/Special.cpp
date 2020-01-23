@@ -18,7 +18,10 @@ void Special::Start()
 //	•`‰æ
 void Special::Render()
 {
-	if (_position.x < 500)
+	LoadGraphScreen(static_cast<int>(_position.x),
+		static_cast<int>(_position.y),
+		"img\\kirakira.png", TRUE);
+	/*if (_position.x < 500)
 	{
 		LoadGraphScreen(static_cast<int>(_position.x),
 			static_cast<int>(_position.y),
@@ -30,7 +33,7 @@ void Special::Render()
 			static_cast<int>(_position.y),
 			"img\\kirakira.png", TRUE);
 
-	}
+	}*/
 
 }
 

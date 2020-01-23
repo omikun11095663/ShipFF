@@ -19,7 +19,10 @@ void LargeFish::Start()
 //	•`‰æ
 void LargeFish::Render()
 {
-	if (_position.x < 500)
+	LoadGraphScreen(static_cast<int>(_position.x),
+		static_cast<int>(_position.y),
+		"img\\fishA.png", TRUE);
+	/*if (_position.x < 500)
 	{
 		LoadGraphScreen(static_cast<int>(_position.x),
 			static_cast<int>(_position.y),
@@ -31,7 +34,7 @@ void LargeFish::Render()
 			static_cast<int>(_position.y),
 			"img\\fishA.png", TRUE);
 
-	}
+	}*/
 
 }
 
