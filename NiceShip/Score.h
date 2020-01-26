@@ -1,7 +1,7 @@
 #pragma once
 #include "Player.h"
 
-//	タイマークラス
+//	スコアクラス
 class Score
 {
 public:
